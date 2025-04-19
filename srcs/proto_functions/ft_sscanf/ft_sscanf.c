@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sscanf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 01:29:23 by marvin            #+#    #+#             */
-/*   Updated: 2025/04/19 03:29:57 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ultimate_libft.h"
+#include "libft.h"
 
 static void	assign_base(void *type_var, char type, t_sscanf *v)
 {

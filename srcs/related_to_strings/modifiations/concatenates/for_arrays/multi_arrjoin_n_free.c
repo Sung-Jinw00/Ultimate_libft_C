@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ultimate_libft.h"
+#include "libft.h"
 
 int	has_to_be_freed(t_majnf v, int *tab_inc)
 {

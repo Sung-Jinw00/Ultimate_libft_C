@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   multi_strjoin_n_free.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 16:07:25 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/18 11:10:23 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ultimate_libft.h"
+#include "libft.h"
 
 int	has_to_be_freed(t_mjnf v, int *tab_inc)
 {

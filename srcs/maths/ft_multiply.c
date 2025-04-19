@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ultimate_libft.h"
+#include "libft.h"
 
 static int	verifications(const char *s1, const char *s2)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   sscanf_utils.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:01:22 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 03:30:18 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ultimate_libft.h"
+#include "libft.h"
 
 int	format_not_finished(const char *remaining_format, int j)
 {
