@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 14:26:24 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/23 00:49:17 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/23 00:55:30 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!new_string)
 		return (NULL);
 	ft_strcpy(new_string, s1);
-	ft_strcat(new_string, s2);
+	ft_strcat(new_string, (char *)s2);
 	return (new_string);
 }
 
