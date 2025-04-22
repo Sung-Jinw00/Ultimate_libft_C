@@ -30,6 +30,7 @@ char	**ft_arr_strsrch(char **array, char *str);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*get_multi_ncmp(int n, const char *s1, ...);
 char	*ft_str_charset(const char *s, char *charset);
+int		ft_str_isformat(const char *s, char *format);
 char	*get_multi_revncmp(int n, const char *s1, ...);
 char	*ft_substr(char *s, unsigned int start, size_t len,
 			bool to_free);
