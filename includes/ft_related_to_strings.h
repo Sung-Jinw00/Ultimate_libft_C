@@ -83,8 +83,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 char	*multi_join(char *s1, ...);
 char	*ft_strcat(char *dest, char *src);
+char	*ft_arr_to_str(char **arr, char *linker);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strncat(char *dest, char *src, size_t nb);
+char	*ft_arrn_to_str(char **arr, char *linker, int n);
 char	*multi_join_n_free(char *to_free, char *s1, ...);
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
 char	*ft_strjoin_n_free(char *s1, char *s2, int tab_to_free);
