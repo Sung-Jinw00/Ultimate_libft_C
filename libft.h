@@ -21,6 +21,7 @@
 //functions
 # include "ft_free.h"
 # include "ft_maths.h"
+# include "ft_files.h"
 # include "ft_malloc.h"
 # include "ft_sscanf.h"
 # include "ft_printing.h"

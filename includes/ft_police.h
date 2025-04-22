@@ -52,5 +52,4 @@
 #  define INVISIBLE			"\033[8m"
 # endif
 
-
 #endif

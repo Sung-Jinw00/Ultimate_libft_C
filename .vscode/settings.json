@@ -2,6 +2,8 @@
 	"files.associations": {
 		"libft.h": "c",
 		"ft_types.h": "c",
-		"ft_free.h": "c"
+		"ft_free.h": "c",
+		"ft_sscanf.h": "c",
+		"ft_malloc.h": "c"
 	}
 }

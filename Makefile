@@ -27,7 +27,7 @@ $(NAME) : $(OBJS)
 	@echo $(GREEN)"libft crée !"$(RESET)
 
 %.o : %.c
-	$(CC) $(FLAGS) -I ./ $(INCLUDES) -c $< -o $@
+	$(CC) $(FLAGS) -I ./ -I $(INCLUDES) -c $< -o $@
 
 clean :
 	rm -f $(OBJS) $(OBJS_BONUS)
