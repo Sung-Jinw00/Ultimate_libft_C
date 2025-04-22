@@ -1,5 +1,7 @@
 {
 	"files.associations": {
-		"libft.h": "c"
+		"libft.h": "c",
+		"ft_types.h": "c",
+		"ft_free.h": "c"
 	}
 }
