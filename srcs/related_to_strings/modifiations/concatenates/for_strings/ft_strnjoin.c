@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnjoin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 14:26:24 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/23 00:51:49 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ char	*ft_strnjoin(char const *s1, size_t n_s1, char const *s2, size_t n_s2)
 	new_string = malloc(len);
 	if (!new_string)
 		return (NULL);
-	while (s1[++i] != '\0' && i < n_s1)
+	while (s1 && s1[++i] != '\0' && i < n_s1)
 		new_string[i] = s1[i];
-	while (s2[j] != '\0' && j < n_s2)
+	while (s2 && s2[j] != '\0' && j < n_s2)
 		new_string[i++] = s2[j++];
 	new_string[i] = '\0';
 	return (new_string);
