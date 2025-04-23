@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_max.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:25:29 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/23 21:05:48 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 /**
  * - Else 404 if tab is NULL.
 */
-int	ft_max(int *tab)
+int	ft_max(int *tab, int len_tab)
 {
 	int	i;
 	int	max;
@@ -30,7 +30,7 @@ int	ft_max(int *tab)
 		return (404);
 	max = tab[0];
 	i = 0;
-	while (tab[++i])
+	while (tab[++i] && i < len_tab)
 		if (tab[i] > max)
 			max = tab[i];
 	return (max);
