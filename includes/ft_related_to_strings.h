@@ -140,6 +140,7 @@ char	*ft_replace_from_string(char *str, char *to_search, char *to_replace,
 
 char	**ft_strsplit(char *str, char *sep);
 char	**ft_split(char *str, char *charset);
+char	**ft_nsplit(char *str, char *charset, int n);
 
 // ───────────────────────────────
 //  Truncate
