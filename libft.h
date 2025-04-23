@@ -13,7 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#ifndef WSPACES
+# ifndef WSPACES
 #  define WSPACES "\a\b\t\n\v\f\r "
 # endif
 

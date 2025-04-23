@@ -2,6 +2,8 @@
 	"files.associations": {
 		"libft.h": "c",
 		"ft_related_to_strings.h": "c",
-		"ft_types.h": "c"
+		"ft_types.h": "c",
+		"ft_chain_lists.h": "c",
+		"ft_verifications.h": "c"
 	}
 }

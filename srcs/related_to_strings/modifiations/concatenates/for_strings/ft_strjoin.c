@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 14:26:24 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/23 01:23:24 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/23 16:30:09 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*new_string;;
+	char	*new_string;
 
 	new_string = ft_calloc(sizeof(char), ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!new_string)

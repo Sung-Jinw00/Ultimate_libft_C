@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:31:37 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/23 16:26:00 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/23 16:30:32 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int	len_word(char *str, char *charset)
 
 char	**write_split(char *str, char **split, char *charset, int n)
 {
-	int i;
+	int	i;
 	int	j;
 	int	len_wrd;
 
