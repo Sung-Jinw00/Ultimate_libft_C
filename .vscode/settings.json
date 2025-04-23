@@ -1,6 +1,7 @@
 {
 	"files.associations": {
 		"libft.h": "c",
-		"ft_related_to_strings.h": "c"
+		"ft_related_to_strings.h": "c",
+		"ft_types.h": "c"
 	}
 }

@@ -13,6 +13,10 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+#ifndef WSPACES
+#  define WSPACES "\a\b\t\n\v\f\r "
+# endif
+
 //defines
 # include "ft_types.h" 
 # include "ft_colors.h"
