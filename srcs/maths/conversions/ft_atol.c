@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:32:27 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/24 15:46:51 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,14 @@ long	ft_atol(char *nptr)
 		if (nptr[i++] == '-')
 			sign = -sign;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
 		result = result * 10 + nptr[i++] - '0';
-	if (result > LONG_MIN || result > LONG_MAX)
-		return (ft_write(2, "ft_atol : nb out of the limits of a long\n"), 0);
+		if (result > LONG_MAX)
+		{
+			ft_write(2, "ft_atol : nb out of the limits of a long\n");
+			return (0);
+		}
+	}
 	return (result * sign);
 }
 

@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:32:27 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/24 15:47:24 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,14 @@ unsigned int	ft_atoui(char *nptr)
 		if (nptr[i++] == '-')
 			return (ft_write(2, "ft_atoui : nb is negative\n"), 0);
 	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
 		result = result * 10 + nptr[i++] - '0';
-	if (result > UINT_MAX)
-		return (ft_write(2, "ft_atoui : nb greater than unsigned int\n"), 0);
+		if (result > UINT_MAX)
+		{
+			ft_write(2, "ft_atoui : nb greater than unsigned int\n");
+			return (0);
+		}
+	}
 	return (result);
 }
 

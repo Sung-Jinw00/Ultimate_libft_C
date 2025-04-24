@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:23:02 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/24 15:45:12 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,13 @@ int	ft_natoi(const char *nptr, int *i)
 		if (nptr[(*i)++] == '-')
 			sign = -sign;
 	while (nptr[*i] >= '0' && nptr[*i] <= '9')
+	{
 		result = result * 10 + nptr[(*i)++] - '0';
+		if (result > INT_MAX)
+		{
+			ft_write(2, "ft_natoi : nb out of the limits of an int\n");
+			return (0);
+		}
+	}
 	return (result * sign);
 }
