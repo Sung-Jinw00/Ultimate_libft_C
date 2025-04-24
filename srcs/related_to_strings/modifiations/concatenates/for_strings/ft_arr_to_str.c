@@ -38,10 +38,10 @@ char	*ft_arr_to_str(char **arr, char *linker)
 	len_str = 0;
 	if (linker && linker[0])
 		len_str = ft_strlen(linker) * (ft_count_words(arr) - 1);
+	i = 0;
 	while (arr[i])
 		len_str += ft_strlen(arr[i++]);
 	str = ft_calloc(sizeof(char), len_str + 1);
-	i = 0;
 	while (arr[i])
 	{
 		ft_strcat(str, arr[i++]);
