@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_min.c                                           :+:      :+:    :+:   */
+/*   ft_max_array.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:25:29 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/23 21:06:09 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/24 15:51:35 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 /**
  * @brief
- * Find the lowest number of an array of ints.
+ * Find the highest number of an array of ints.
  * 
  * @returns
- * The lowest number of an array of ints.*/
+ * The highest number of an array of ints.*/
 /**
  * - Else 404 if tab is NULL.
 */
-int	ft_min(int *tab, int len_tab)
+int	ft_max_array(int *tab, int len_tab)
 {
 	int	i;
-	int	min;
+	int	max;
 
 	if (!tab)
 		return (404);
-	min = tab[0];
+	max = tab[0];
 	i = 0;
 	while (tab[++i] && i < len_tab)
-		if (tab[i] < min)
-			min = tab[i];
-	return (min);
+		if (tab[i] > max)
+			max = tab[i];
+	return (max);
 }

@@ -32,9 +32,9 @@ int				ft_nbdigit(long double nb, int base);
 int				ft_sqrt(int nb);
 int				ft_is_prime(int nb);
 int				ft_find_next_prime(int nb);
-int				ft_min(int *tab, int len_tab);
-int				ft_max(int *tab, int len_tab);
 int				ft_recursive_factorial(int nb);
+int				ft_min_array(int *tab, int len_tab);
+int				ft_max_array(int *tab, int len_tab);
 int				ft_recursive_power(int nb, int power);
 char			*ft_multiply(const char *s1, const char *s2);
 
