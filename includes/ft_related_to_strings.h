@@ -63,6 +63,7 @@ size_t	ft_str_strlen(const char *s1, char *s2);
 int		ft_offset(const char *str, char *charset);
 int		ft_strspn(const char *str, char *charset);
 int		ft_strrspn(const char *str, char *charset);
+int		*ft_getlen_strarr(char **arr, int *len_arrint);
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*                                Modifications                               */
@@ -141,6 +142,7 @@ char	*ft_replace_from_string(char *str, char *to_search, char *to_replace,
 char	**ft_strsplit(char *str, char *sep);
 char	**ft_split(char *str, char *charset);
 char	**ft_nsplit(char *str, char *charset, int n);
+char	**ft_split_getlen(char *str, char *set, int **int_arr, int *len_arr);
 
 // ───────────────────────────────
 //  Truncate
