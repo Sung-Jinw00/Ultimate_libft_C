@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 01:29:23 by marvin            #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/28 19:26:58 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ static void	assign_char_str_ptr(void *csp_var, char type, t_sscanf *v)
 
 static void	parser(t_sscanf	*v, char type, va_list args, int *j)
 {
-	if (multi_charcmp(type, "csndiuxXo"))
+	if (ft_strchr("csndiuxXo", type))
 		(*j)++;
 	if (type == 'c' || type == 's')
 		assign_char_str_ptr((char *)va_arg(args, char *), type, v);

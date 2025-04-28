@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:01:22 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/28 19:27:33 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	format_not_finished(const char *remaining_format, int j)
 	while (remaining_format[i])
 	{
 		if (remaining_format[i] == '%'
-			&& multi_charcmp(remaining_format[i + 1], "csndiuxXo"))
+			&& ft_strchr("csndiuxXo", remaining_format[i + 1]))
 			return (1);
 		i++;
 	}

@@ -41,7 +41,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 // ───────────────────────────────
 
 int		str_multi_cmp(const char *s1, ...);
-char	multi_charcmp(char c, char *str_char);
 int		ft_strcmp(const char *s1, const char *s2);
 int		str_multi_ncmp(int n, const char *s1, ...);
 int		str_multi_revncmp(int n, const char *s1, ...);

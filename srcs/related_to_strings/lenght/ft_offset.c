@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 20:13:33 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/19 20:48:04 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/28 19:26:29 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_offset(const char *str, char *charset)
 	i = 0;
 	if (!str)
 		return (0);
-	while (multi_charcmp(str[i], charset))
+	while (ft_strchr(charset, str[i]))
 		i++;
 	return (i);
 }
