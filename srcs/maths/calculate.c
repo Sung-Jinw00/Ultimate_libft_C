@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 21:58:38 by marvin            #+#    #+#             */
-/*   Updated: 2025/04/29 01:07:27 by marvin           ###   ########.fr       */
+/*   Updated: 2025/04/29 01:26:31 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static double	if_no_parenthesis(const char **expr)
 		(*expr)++;
 	if (**expr && (**expr == '-' || **expr == '+'))
 		(*expr)++;
-	while (**expr && (ft_isnum(**expr) || **expr == '.'))
+	while (**expr && (ft_isnum(**expr) || **expr == '.' || **expr == ','))
 		(*expr)++;
 	return (nb);
 }
@@ -67,13 +67,13 @@ static t_calculate	*create_list(const char *expr)
 	calc_list = NULL;
 	while (*expr)
 	{
-		if (*expr && ft_iswhitespace(*expr))
+		while (*expr && ft_iswhitespace(*expr))
 			expr++;
 		if (*expr == '(' || (*expr == '-' && *(expr + 1) == '('))
 			nb = if_parenthesis(&expr, 1, 0, 0);
 		else
 			nb = if_no_parenthesis(&expr);
-		if (*expr && ft_iswhitespace(*expr))
+		while (*expr && ft_iswhitespace(*expr))
 			expr++;
 		if (*expr && ft_strchr("+-*/", *expr))
 			calc_list = add_at_calculate(calc_list, nb, *expr, i++);
@@ -110,6 +110,34 @@ static t_calculate	*do_mul_div(t_calculate *calc_list)
 	return (save);
 }
 
+/**
+ * @brief Calculate an arithmetic expression with parenthesis.
+ * 
+ * 1)The function support the following operators :*/
+/**
+ * - Addition '+'*/
+/**
+ * - Subtraction '-'*/
+/**
+ * - Multiplication '*'*/
+/**
+ * - Division '/' (as floating point division)
+ * 
+ * 2)The function supports parenthesis levels, ex : (2 / (2 + 3.33) * 4) - -6
+ * 
+ * 3)The function does not support multiple operators or minus sign separated
+ * by a white space such as :*/
+/**
+ * - 1 - - 1    // Invalid*/
+/**
+ * - 1- * 1     // Invalid*/
+/**
+ * - 6 / - (4)  // Invalid*/
+/**
+ * - 6 + -(- 4) // Invalid*/
+/**
+ * @return The result in a double, or zero if `expr` is NULL or empty.
+*/
 double	calculate(const char *expr)
 {
 	t_calculate	*tmp;
