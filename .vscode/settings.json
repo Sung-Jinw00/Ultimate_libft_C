@@ -7,6 +7,8 @@
 		"ft_verifications.h": "c",
 		"ft_malloc.h": "c",
 		"ft_files.h": "c",
-		"ft_maths.h": "c"
+		"ft_maths.h": "c",
+		"ft_sscanf.h": "c",
+		"ft_printing.h": "c"
 	}
 }

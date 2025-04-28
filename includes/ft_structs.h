@@ -73,4 +73,15 @@ typedef struct s_sscanf
 	int			output;
 }	t_sscanf;
 
+// ───────────────────────────────
+//  ft_calculate
+// ───────────────────────────────
+
+typedef struct s_calculate
+{
+	double			nb;
+	char			operator;
+	struct s_calculate	*next;
+}	t_calculate;
+
 #endif
