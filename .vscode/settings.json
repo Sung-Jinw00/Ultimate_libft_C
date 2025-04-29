@@ -9,6 +9,8 @@
 		"ft_files.h": "c",
 		"ft_maths.h": "c",
 		"ft_sscanf.h": "c",
-		"ft_printing.h": "c"
+		"ft_printing.h": "c",
+		"ft_colors.h": "c",
+		"ft_free.h": "c"
 	}
 }

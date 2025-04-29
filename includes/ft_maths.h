@@ -31,6 +31,8 @@ int				ft_nbdigit(long double nb, int base);
 
 int				ft_sqrt(int nb);
 int				ft_is_prime(int nb);
+int				ft_max(int a, int b);
+int				ft_min(int a, int b);
 int				ft_find_next_prime(int nb);
 double			calculate(const char* expr);
 int				ft_recursive_factorial(int nb);
