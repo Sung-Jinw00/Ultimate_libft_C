@@ -3,3 +3,5 @@ main_test.c
 a.out
 *.gch
 *.cub
+.vscode
+*.json
