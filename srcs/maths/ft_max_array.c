@@ -6,7 +6,7 @@
 /*   By: locagnio <locagnio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:25:29 by locagnio          #+#    #+#             */
-/*   Updated: 2025/04/30 17:15:50 by locagnio         ###   ########.fr       */
+/*   Updated: 2025/04/30 17:40:18 by locagnio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_max_array(int *tab, int len_tab)
 		return (404);
 	max = tab[0];
 	i = -1;
-	while (tab[++i] && i < len_tab)
+	while (++i < len_tab)
 		if (tab[i] > max)
 			max = tab[i];
 	return (max);
