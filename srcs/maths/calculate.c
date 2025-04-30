@@ -56,7 +56,6 @@ static double	if_no_parenthesis(const char **expr)
 		(*expr)++;
 	return (nb);
 }
-
 static t_calculate	*create_list(const char *expr)
 {
 	int			i;
@@ -84,7 +83,6 @@ static t_calculate	*create_list(const char *expr)
 	}
 	return (calc_list);
 }
-
 static t_calculate	*do_mul_div(t_calculate *calc_list)
 {
 	t_calculate	*save;
@@ -109,7 +107,6 @@ static t_calculate	*do_mul_div(t_calculate *calc_list)
 	}
 	return (save);
 }
-
 /**
  * @brief Calculate an arithmetic expression with parenthesis.
  * 
