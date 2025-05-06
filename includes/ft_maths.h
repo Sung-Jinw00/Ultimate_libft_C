@@ -75,7 +75,7 @@ char			*all_for_one(void *value, int precision, char *type);
 //  NB TO NB
 // ───────────────────────────────
 
-void			ft_absolu(void *nb, void *dup, char *type);
+long double		ft_absolu(long double nb);
 
 // ───────────────────────────────
 //  STR TO STR
