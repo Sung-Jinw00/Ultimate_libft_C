@@ -79,8 +79,8 @@ typedef struct s_sscanf
 
 typedef struct s_calculate
 {
-	double			nb;
-	char			operator;
+	double				nb;
+	char				operator;
 	struct s_calculate	*next;
 }	t_calculate;
 

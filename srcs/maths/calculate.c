@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 21:58:38 by marvin            #+#    #+#             */
-/*   Updated: 2025/04/29 01:26:31 by marvin           ###   ########.fr       */
+/*   Updated: 2025/05/28 23:26:18 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ static double	if_no_parenthesis(const char **expr)
 		(*expr)++;
 	return (nb);
 }
+
 static t_calculate	*create_list(const char *expr)
 {
 	int			i;
@@ -83,6 +84,7 @@ static t_calculate	*create_list(const char *expr)
 	}
 	return (calc_list);
 }
+
 static t_calculate	*do_mul_div(t_calculate *calc_list)
 {
 	t_calculate	*save;
@@ -107,6 +109,7 @@ static t_calculate	*do_mul_div(t_calculate *calc_list)
 	}
 	return (save);
 }
+
 /**
  * @brief Calculate an arithmetic expression with parenthesis.
  * 

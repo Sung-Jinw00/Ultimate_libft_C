@@ -17,6 +17,11 @@
 /*                              FOREGROUND COLORS                             */
 /* ══════════════════════════════════════════════════════════════════════════ */
 
+/* Reset all text formatting */
+# ifndef RESET
+#  define RESET				"\033[0m"
+# endif
+
 /* Black text */
 # ifndef BLACK
 #  define BLACK				"\033[30m"
