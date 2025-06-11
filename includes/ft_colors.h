@@ -157,137 +157,52 @@
 # endif
 
 /* ══════════════════════════════════════════════════════════════════════════ */
-/*                               RGBA HEX COLORS                              */
+/*                               RGB COLORS                              */
 /* ══════════════════════════════════════════════════════════════════════════ */
 
-/* RGBA black */
+/* RGB black */
 # ifndef OX_BLACK
-#  define OX_BLACK			0x00000000
+#  define OX_BLACK			0x000000
 # endif
 
-/* RGBA red */
-# ifndef OX_RED
-#  define OX_RED			0x00FF0000
-# endif
-
-/* RGBA green */
-# ifndef OX_GREEN
-#  define OX_GREEN			0x0000FF00
-# endif
-
-/* RGBA blue */
-# ifndef OX_BLUE
-#  define OX_BLUE			0x000000FF
-# endif
-
-/* RGBA yellow */
-# ifndef OX_YELLOW
-#  define OX_YELLOW			0x00FFFF00
-# endif
-
-/* RGBA magenta */
-# ifndef OX_MAGENTA
-#  define OX_MAGENTA		0x00FF00FF
-# endif
-
-/* RGBA cyan */
-# ifndef OX_CYAN
-#  define OX_CYAN			0x0000FFFF
-# endif
-
-/* RGBA white */
-# ifndef OX_WHITE
-#  define OX_WHITE			0x00FFFFFF
-# endif
-
-/* RGBA gray */
+/* RGB black */
 # ifndef OX_GRAY
-#  define OX_GRAY			0x00808080
+#  define OX_GRAY			0x808080
 # endif
 
-/* RGBA orange */
-# ifndef OX_ORANGE
-#  define OX_ORANGE			0x00FFA500
+/* RGB white */
+# ifndef OX_WHITE
+#  define OX_WHITE			0xFFFFFF
 # endif
 
-/* RGBA pink */
-# ifndef OX_PINK
-#  define OX_PINK			0x00FFC0CB
+/* RGB red */
+# ifndef OX_RED
+#  define OX_RED			0xFF0000
 # endif
 
-/* RGBA violet */
-# ifndef OX_VIOLET
-#  define OX_VIOLET			0x00800080
+/* RGB green */
+# ifndef OX_GREEN
+#  define OX_GREEN			0x00FF00
 # endif
 
-/* RGBA turquoise */
-# ifndef OX_TURQUOISE
-#  define OX_TURQUOISE		0x00E0D0D0
+/* RGB blue */
+# ifndef OX_BLUE
+#  define OX_BLUE			0x0000FF
 # endif
 
-/* RGBA beige */
-# ifndef OX_BEIGE
-#  define OX_BEIGE			0x00F5DCBE
+/* RGB yellow */
+# ifndef OX_YELLOW
+#  define OX_YELLOW			0xFFFF00
 # endif
 
-/* RGBA brown */
-# ifndef OX_BROWN
-#  define OX_BROWN			0x002A2A2A
+/* RGB magenta */
+# ifndef OX_MAGENTA
+#  define OX_MAGENTA		0xFF00FF
 # endif
 
-/* RGBA olive */
-# ifndef OX_OLIVE
-#  define OX_OLIVE			0x00808000
-# endif
-
-/* RGBA lime */
-# ifndef OX_LIME
-#  define OX_LIME			0x0000FF00
-# endif
-
-/* RGBA indigo */
-# ifndef OX_INDIGO
-#  define OX_INDIGO			0x00820082
-# endif
-
-/* RGBA peach */
-# ifndef OX_PEACH
-#  define OX_PEACH			0x00DAB9D2
-# endif
-
-/* RGBA light blue */
-# ifndef OX_LIGHT_BLUE
-#  define OX_LIGHT_BLUE		0x00D8E6FF
-# endif
-
-/* RGBA navy blue */
-# ifndef OX_NAVY_BLUE
-#  define OX_NAVY_BLUE		0x00008080
-# endif
-
-/* RGBA forest green */
-# ifndef OX_FOREST_GREEN
-#  define OX_FOREST_GREEN	0x0028B22F
-# endif
-
-/* RGBA gold */
-# ifndef OX_GOLD
-#  define OX_GOLD			0x00D70000
-# endif
-
-/* RGBA chartreuse */
-# ifndef OX_CHARTREUSE
-#  define OX_CHARTREUSE		0x0000FF00
-# endif
-
-/* RGBA coral */
-# ifndef OX_CORAL
-#  define OX_CORAL			0x007F5042
-# endif
-
-/* RGBA pearl */
-# ifndef OX_PEARL
-#  define OX_PEARL			0x00E68C8C
+/* RGB cyan */
+# ifndef OX_CYAN
+#  define OX_CYAN			0x00FFFF
 # endif
 
 #endif
