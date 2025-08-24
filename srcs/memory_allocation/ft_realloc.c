@@ -35,7 +35,7 @@ void	*ft_realloc(void *ptr, size_t size)
 	if (!new_ptr)
 		return (NULL);
 	i = -1;
-	while (*(char *)(ptr + i) && ++i < size)
+	while (*(char *)(ptr + ++i) && i < size)
 		*(char *)(new_ptr + i) = *(char *)(ptr + i);
 	if (ptr)
 		free(ptr);
