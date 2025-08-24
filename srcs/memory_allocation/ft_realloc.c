@@ -27,16 +27,19 @@
 void	*ft_realloc(void *ptr, size_t size)
 {
 	void	*new_ptr;
-	size_t	i;
+	int		i;
 
 	if (size == 0 && ptr)
 		return (free(ptr), NULL);
 	new_ptr = (void *)ft_calloc(sizeof(void *), size);
 	if (!new_ptr)
 		return (NULL);
-	i = -1;
-	while (*(char *)(ptr + ++i) && i < size)
+	i = 0;
+	while (*(char *)(ptr + i) && i < size)
+	{
 		*(char *)(new_ptr + i) = *(char *)(ptr + i);
+		i++;
+	}
 	if (ptr)
 		free(ptr);
 	return (new_ptr);
