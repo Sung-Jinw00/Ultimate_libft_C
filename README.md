@@ -42,3 +42,20 @@ Clone the repository directly on your Linux-based system:
 ```bash
 git clone git@github.com:Sung-Jinw00/Ultimate_libft_C.git Ultimate_libft_C
 cd Ultimate_libft_C
+```
+
+---
+
+##💡 Usage
+
+The project includes a Makefile for easy compilation.
+You can run tests through your own main test file or link the library directly in other C projects.
+
+make
+./your_test_program
+
+---
+
+##🧑‍💻 Author
+
+Created and maintained by @Sung_Jinw00
