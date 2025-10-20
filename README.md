@@ -46,7 +46,7 @@ cd Ultimate_libft_C
 
 ---
 
-##💡 Usage
+## 💡 Usage
 
 The project includes a Makefile for easy compilation.
 You can run tests through your own main test file or link the library directly in other C projects.
