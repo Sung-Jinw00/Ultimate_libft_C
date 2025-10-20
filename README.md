@@ -1,6 +1,6 @@
 # 🚀 Ultimate Libft C
 
-Ultimate Libft C is a toolbox containing more than 150 C functions designed to make your journey in C programming faster, easier, and more efficient.
+Ultimate Libft C is a toolbox library containing more than 150 C functions designed to make your journey in C programming faster, easier, and more efficient.
 
 ---
 
@@ -52,7 +52,7 @@ The project includes a Makefile for easy compilation.
 You can run tests through your own main test file or link the library directly in other C projects.
 
 make  
-./your_test_program
+./your_program_name -L libft.a
 
 ---
 
