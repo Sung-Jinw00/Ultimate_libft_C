@@ -1,7 +1,7 @@
 # 🚀 Ultimate Libft C
 
 Ultimate Libft C is a toolbox library containing more than 150 C functions designed to make your journey in C programming faster, easier, and more efficient.  
-<img width="870" height="69" alt="image" src="https://github.com/user-attachments/assets/6c9dc9ca-5094-41e8-b404-e6ef8dbd287f" />
+<img width="858" height="52" alt="image" src="https://github.com/user-attachments/assets/9bee4470-541b-4a65-8546-95cfb9baf2c5" />
 
 ---
 
