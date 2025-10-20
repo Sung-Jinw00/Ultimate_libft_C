@@ -51,11 +51,11 @@ cd Ultimate_libft_C
 The project includes a Makefile for easy compilation.
 You can run tests through your own main test file or link the library directly in other C projects.
 
-make
+make  
 ./your_test_program
 
 ---
 
-##🧑‍💻 Author
+## 🧑‍💻 Author
 
 Created and maintained by @Sung_Jinw00
